@@ -12,12 +12,14 @@ struct WeatherView: View {
     @State private var cityName: String = ""
 
     var body: some View {
-        VStack {
-            cityInputField
-            weatherButton
-            weatherInfo
-            errorMessage
-            Spacer()
+        ScrollView {
+            VStack {
+                cityInputField
+                weatherButton
+                weatherInfo
+                errorMessage
+                Spacer()
+            }
         }
     }
 
